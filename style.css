@@ -1,0 +1,130 @@
+/* General Layout */
+body {
+  font-family: 'Playfair Display', serif;
+  background-color: #DFC1C8; /* light pink */
+  color: #2f2f2f;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background-color: #C48197; /* Pink */
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #E1E5D7; /* Teak */
+}
+
+/* Cards & Sections */
+.card {
+  background-color: #C48197; /* Pink */
+  border-radius: 15px;
+  margin-top: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Resume Button */
+.btn-medical {
+  background-color: #F5F3E9; /* Desert Sand */
+  color: #2f2f2f;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-medical:hover {
+  background-color: #F5F3E9; /* Cream */
+  color: #E1E5D7;
+}
+
+/* Icon Styling */
+.icon-circle {
+  background-color: #ffffff; /* Aloe */
+  color: #DFC1C8;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* Skills Styling */
+#skills ul {
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+#skills li {
+  background-color: #F5F3E9; /* Cream */
+  color: #000000; /* black */
+  padding: 8px 16px;
+  border-radius: 20px;
+  list-style: none;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+/* Carousel */
+.carousel-inner img {
+  max-height: 400px;
+  object-fit: cover;
+}
+
+/* Headings */
+h1, h2, h5 {
+  color: #2f2f2f;
+}
+
+/* Carousel Buttons */
+.btn-outline-dark {
+  margin-top: 10px;
+  border-color: #E1E5D7;
+  color: #E1E5D7;
+  font-weight: 600;
+}
+
+.btn-outline-dark:hover {
+  background-color: #E1E5D7;
+  color: #E1E5D7;
+}
+
+/* Contact Section */
+#contact {
+  padding: 40px 0;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #skills ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
